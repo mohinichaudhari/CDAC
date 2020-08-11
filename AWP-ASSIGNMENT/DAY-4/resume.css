@@ -1,0 +1,63 @@
+html,
+body{
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background: wheat;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.nameplate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 100px;
+    color: white;
+    width: 50vw;
+    height: 25vh;
+    background: linear-gradient( rgba(204, 46, 46, 0.801), brown );
+}
+
+.profilephoto{
+    background: url("profile.png");
+    background-size: cover;
+    background-position: center;
+    height: 22vh;
+    width: 12vw;
+    margin-left: 9vw;
+    margin-top: 1vh;
+    border-radius: 50%;
+
+}
+
+.body1{
+    height: 75vh;
+    background: whitesmoke;
+    display: flex;
+    margin-top: 5vh;
+    border-top: 1px solid;
+}
+
+.left{
+    margin-left: 3vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-right: 1px solid;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
