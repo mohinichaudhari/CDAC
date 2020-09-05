@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+                crossorigin="anonymous">
+    <title>weather</title>
+    <script src="weather.js"></script>
+    <style>
+        ::placeholder{
+            color: white !important;
+        }
+    </style>
+</head>
+<body style="background:url(weather4.jpg); height:100%; width: 100%; background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" id="parent">
+                <div class="row justify-content-between" style="height: 10vh; background-color: rgba(60, 85, 109, 0.562);">
+                    <div class="col-2  d-flex align-items-center justify-content-center" 
+                            style="color: white; font-family: cursive; font-size: 5vh;" >
+                      Forcast
+                    </div>
+                    <div class="col-3 ">
+
+                    </div>
+                    <div class="col-5  d-flex justify-content-end align-items-center">
+                        <input type="text" id="inputbox" class="form-control text-light bg-transparent" placeholder="search"
+                                 style="border-color: white;  outline: none; ">
+                    </div>
+                    <div class="col-1  d-flex justify-content-center align-items-center">
+                        <button class="btn btn-primary btn-block" onclick="search()">search</button>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="row mt-3" >
+                    <div class="col font-weight-bold d-flex justify-content-center align-items-center" id="cityname"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                        
+                    </div>
+                </div>
+                <div class="row mt-3" >
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-1 d-flex justify-content-end align-items-center">
+                        <img src="rainy.png" alt="" style="height: 15vh; width: 15vh;">
+                    
+                    </div>
+                    <div class="col-3 font-weight-bold ml-5 d-flex justify-content-start align-items-center" id="temp"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                    
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+                <div class="row mt-3" >
+                    <div class="col font-weight-bold d-flex justify-content-center align-items-center" id="clouds"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                       
+                    </div>
+                </div>
+                <div class="row mt-3" >
+                    <div class="col-6 font-weight-bold d-flex justify-content-end align-items-center" id="wind"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                      
+                    </div>
+                    <div class="col-6 font-weight-bold d-flex justify-content-start align-items-center" id="visibility"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                       
+                    </div>
+                </div>
+                <div class="row mt-3" >
+                    <div class="col-4 font-weight-bold d-flex justify-content-end align-items-center" id="pressure"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+             
+                    </div>
+                    <div class="col-4 font-weight-bold d-flex justify-content-center align-items-center" id="humidity"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                      
+                    </div>
+                    <div class="col-4 font-weight-bold d-flex justify-content-start align-items-center" id="feels"
+                            style="font-size: 5vh; color: white; font-family: sans-serif;">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
