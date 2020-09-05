@@ -6,18 +6,40 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>1</title>
-
+    <title>Document</title>
     <script src="1.js"></script>
   </head>
   <body>
-        <div id="parent" >
-            <div
-             style="height: 20vh;display: flex; justify-content: center; align-items:center; 
-                    width: 100%;background-color: cadetblue;font-size:5vh;">
-                    Sample
-            </div>
-        </div>
-        <button onclick="AJAX()">AJAX CALL</button>
+    <h1>Regiseration Form</h1>
+
+    <div>
+      Username <input type="text" name="" id="username" required />
+    </div>
+
+    <div style="margin-top: 8px">
+      Password <input type="password" name="" id="password" required />
+    </div>
+
+    <div style="margin-top: 8px">
+      Email <input type="text" name="" id="email" required />
+    </div>
+
+    <div style="margin-top: 8px">
+      Mobile <input type="text" name="" id="mobile" />
+    </div>
+
+    <div>
+      <input
+        type="button"
+        value="Register GET"
+        onclick="registerUserVer1()"
+      />
+
+      <input
+        type="button"
+        value="Register POST"
+        onclick="registerUsingPost()"
+      />
+    </div>
   </body>
 </html>
