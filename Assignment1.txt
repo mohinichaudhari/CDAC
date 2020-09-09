@@ -98,7 +98,7 @@ Q5. Create Random some files and sub directories.
 	-->>	>sort file1.txt
 		>tac file1.txt
 
-	c) Create some hidden files and sub directories and display them using “ls -a”
+	c) Create some hidden files and sub directories and display them using â€œls -aâ€
 	-->>	>touch .mohini.txt
 		>mkdir a
 		>ls -a
@@ -204,59 +204,100 @@ d)Copy file inside a into b
 -->> 
 
 
+Q2. Change the permission of the previous directory to executable only.
+	Analyze the output.
+-->>	chmod 111 aditya/
+
+Q3. Change the permission of the previous directory to read only.
+	Analyze the output.
+-->>	chmod 444 aditya/
+
+Q4. Use echo to list the all files of your home directory.
+-->>	echo .*
+
+Q5. Use echo to list the all files of /etc/ directory
+-->>	echo .* * /etc /directory
+	echo .*  /etc /directory
+
+Q6. Use echo to list the all files of /etc/ directory with extension name .conf
+-->>	find /etc -type f -name "*.conf"
+
+Q7. Use echo to append your name to a.txt
+-->>	echo Aditya>> file3.txt
+
+
+
+
+1.	Create Three level nested directory a,b and c
+	-->>	makdir a  ->> cd a -->> mkdir b -->> cd b -->> mkdir c -->> cd c
+a)Create at least one hidden file in each directory	
+	-->>	touch .a.txt
+	>	touch .b.txt
+	>	touch .c.txt
+
+b)Create at least one normal text file in each directory
+	-->>	in dir a -->>touch a1.txt
+	>	in dir b -->>touch b2.txt
+	>	in dir c -->>touch c3.txt
+c)Copy c into a
+	-->> cp c a
+
+d)Copy file inside a into b
+	-->>	cp a b
+
 2.	Change the third level directory c permission to read only
--->>
+	-->>	chmod 4 c		
 
 3.	Try copying third level c directory to outside of a
--->>
+	-->>	cp b/c ../
 
-4.	Create the directory  “data“ inside b
--->>
-
+4.	Create the directory  â€œdataâ€œ inside b
+  -->> mkdir b/data
+  
 5.	Change the permission of b to read and write only
--->>
+  -->> chmod u+rw b
 
-6.	Create directory “data2”  inside b
--->>
+6.	Create directory â€œdata2â€  inside b
+  -->>  mkdir b/data2
 
 7.	Create data.txt file inside b
--->>
+  -->>  touch b/data.txt
 
 8.	Rename the second level directory c to copied_dir
--->>
+-->>  mv b/c a
 
 9.	Change permission of copied_dir to only executable
--->>
+-->>  chmod u+x b/c
 
 10.	Try ls on copied_dir
--->>
+-->>  ls cannot run because of executable only cannot read
 
 11.	Try moving copied_dir to outside of a
--->>
+-->>  cannot move dir to outside because of restriced permissions
 
 12.	Try moving data directory outside of a
--->>
+-->>  cannot move, permission access denied
 
 13.	Now change the owner of the directory a to root
--->>
+-->>  chmod u+rwx a
 
 14.	Change permission of a to read write and executable to only user
--->>
+-->>  chmod u+rwx a
 
 15.	Try creating directory sample inside a
--->>
+-->>  
 
 16.	Create directory x outside a
--->>
+-->>  mv x ./a
 
 17.	Try moving x inside a
--->>
+-->>  mv x ./a
 
 18.	Create directory movies
--->>
+-->>  mkdir movies
 
 19.	Change group of movies to sudo
--->>
+-->>  
 
 20.	Change group of movies to avahi
 -->>
@@ -274,5 +315,4 @@ d)Copy file inside a into b
 -->>
 
 25.	Try deleting the file
--->>
 
