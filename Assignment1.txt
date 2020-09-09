@@ -92,7 +92,7 @@ Q4. Create a file with some content using vi editor
 
 Q5. Create Random some files and sub directories.
 	a) display files row wise, column wise, 1 per row
-	-->>
+	-->>	column file1.txt
 	
 	b) sort the files in ascending, descending order
 	-->>	>sort file1.txt
@@ -206,11 +206,11 @@ d)Copy file inside a into b
 
 Q2. Change the permission of the previous directory to executable only.
 	Analyze the output.
--->>	chmod 111 aditya/
+-->>	chmod 111 mohini/
 
 Q3. Change the permission of the previous directory to read only.
 	Analyze the output.
--->>	chmod 444 aditya/
+-->>	chmod 444 mohini/
 
 Q4. Use echo to list the all files of your home directory.
 -->>	echo .*
@@ -223,7 +223,7 @@ Q6. Use echo to list the all files of /etc/ directory with extension name .conf
 -->>	find /etc -type f -name "*.conf"
 
 Q7. Use echo to append your name to a.txt
--->>	echo Aditya>> file3.txt
+-->>	echo mohini>> file3.txt
 
 
 
