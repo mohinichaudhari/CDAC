@@ -9,7 +9,7 @@ public class q67 {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		// TODO Auto-generated method stub
-		FileInputStream f = new FileInputStream("D:\\Adinath\\ACDAC\\java\\prac\\file1.txt");
+		FileInputStream f = new FileInputStream("D:\\Mohini\\ACDAC\\java\\prac\\file1.txt");
 		ObjectInputStream o = new ObjectInputStream(f);
 		
 		ArrayList<Item> a = new ArrayList<>();
